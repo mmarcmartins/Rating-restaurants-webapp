@@ -211,6 +211,20 @@ nav h1 a {
 }
 /* ====================== Restaurant Details ====================== */
 
+.main-table--openinghours{
+
+  width: 100%;  
+  border-spacing: 0;
+
+}
+.main-table--openinghours td{
+  padding: 1em;
+  border-bottom: 1px solid #252831;
+}
+.main-table--openinghours tr td:first-of-type{
+  border-right: 1px solid #252831;
+}
+
 .inside #footer {
   position: relative;
   width: 100%;
