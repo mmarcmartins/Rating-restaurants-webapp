@@ -12,14 +12,31 @@
 
 <body class="inside restaurants-single">
   <!-- Beginning header -->
-  <header class="header--page">
-    <!-- Beginning nav -->
-    <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
-    </nav>
+    <header class="header--page">
+      <nav class="menu--nav">
+        <h1 class="menutitle">
+          <a href="/">Restaurant Reviews</a>          
+        </h1>
+       <span class="menu--button" id="menuButton"></span>
+       <ul class="nostylelist menu-list restaurant-info" id="menuList">
+          <li>
+            <a class="anchor" href="#summaryRestaurant"> Summary </a>  
+          </li>
 
-    <!-- End nav -->
-  </header>
+          <li>
+            <a class="anchor" href="#addressRestaurant"> Address </a>  
+          </li>
+          <li>
+            <a class="anchor" href="#officeHours"> Office Hours </a>  
+          </li>
+
+          <li>
+            <a class="anchor" href="#reviews-container"> Reviews </a>  
+          </li>
+      </ul>
+
+      </nav>
+    </header>
   <!-- End header -->
   <!-- Beginning breadcrumb -->
 
@@ -34,21 +51,43 @@
 
     <!-- End map -->
     <!-- Beginning restaurant -->
-    <section id="restaurant-container">
-      <h1 class="restaurant-container--title" id="restaurant-name"></h1>
-      <img id="restaurant-img">
-      <p class="restaurant-container--location" id="restaurant-cuisine"></p>
-      <section class="main--center-map" id="map-container">
-        <div class="map--mapconfig" id="map"></div>
+    <article>
+      <section id="summaryRestaurant">
+
+        <div class="restaurant-container title--line">          
+                <h1 class="main-section--title" id="restaurant-name"></h1>
+        </div>
+
+           <p class="restaurant-container--cuisine" id="restaurant-cuisine"></p>
+        
+        <img id="restaurant-img">
+         </section>
+
+
+        <section class="main--center-map" id="addressRestaurant">
+          <div class="restaurant-container title--line" >          
+              <h1 class="main-section--title">Address</h1>
+          </div>
+          <div class="map--mapconfig" id="map"></div>
+          <p class="'main-section--title main--center-adress" id="restaurant-address"></p>
+        </section>
+
+        
+        <section id="officeHours">
+            <div class="restaurant-container title--line">          
+                <h2 class="main-section--title">Office Hours</h2>
+            </div>
+
+          <table class="main-table--openinghours" id="restaurant-hours"></table>
+        </section>
+
+    
+      <!-- end restaurant -->
+      <!-- Beginning reviews -->
+      <section id="reviews-container">
+        <ul id="reviews-list"></ul>
       </section>
-      <p class="main--center-adress" id="restaurant-address"></p>
-      <table class="main-table--openinghours" id="restaurant-hours"></table>
-    </section>
-    <!-- end restaurant -->
-    <!-- Beginning reviews -->
-    <section id="reviews-container">
-      <ul id="reviews-list"></ul>
-    </section>
+    </article>
     <!-- End reviews -->
   </main>
   <!-- End main -->
@@ -64,6 +103,7 @@
   <script type="text/javascript" src="js/dbhelper.js"></script>
   <!-- Main javascript file -->
   <script type="text/javascript" src="js/restaurant_info.js"></script>
+    <script type="application/javascript" charset="utf-8" src="js/personalScript.js"></script>
   <!-- Google Maps -->
   <!--  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_tKbW6A5pQ-eupxI56myUnHLqYCzOjKo&libraries=places&callback=initMap"></script> -->
   <!-- End scripts -->

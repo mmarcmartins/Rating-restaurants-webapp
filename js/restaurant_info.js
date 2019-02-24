@@ -126,9 +126,13 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
  */
 fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById('reviews-container');
-  const title = document.createElement('h2');
+  const holderReviewTitle = document.createElement('div');
+  holderReviewTitle.classList.add('restaurant-container','title--line');
+  const title = document.createElement('h1');
+  title.classList.add('main-section--title');
   title.innerHTML = 'Reviews';
-  container.appendChild(title);
+  holderReviewTitle.appendChild(title);
+  container.appendChild(holderReviewTitle);
 
   if (!reviews) {
     const noReviews = document.createElement('p');
@@ -136,6 +140,8 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
     container.appendChild(noReviews);
     return;
   }
+
+
   const ul = document.getElementById('reviews-list');
   reviews.forEach(review => {
     ul.appendChild(createReviewHTML(review));
@@ -173,6 +179,7 @@ createReviewHTML = (review) => {
 fillBreadcrumb = (restaurant=self.restaurant) => {
   const breadcrumb = document.getElementById('breadcrumb');
   const li = document.createElement('li');
+  li.classList.add('current');
   li.innerHTML = restaurant.name;
   breadcrumb.appendChild(li);
 }

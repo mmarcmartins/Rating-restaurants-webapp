@@ -217,34 +217,4 @@ addMarkersToMap = (restaurants = self.restaurants) => {
 
 
 
-/* All Effects and Focus */
-
-
- const menuButton = document.getElementById('menuButton');
- const listMenu = document.getElementById('menuList');
-
- menuButton.addEventListener('click', () => {
-    
-    if(!listMenu.classList.contains('active')){
-      listMenu.classList.add('active');
-      menuButton.classList.add('active');
-    }
-    else{
-      menuButton.classList.remove('active');
-      listMenu.classList.remove('active');
-    }
-
-
- })
-
-
-
-
-
-
-
-
-
-
-
 
