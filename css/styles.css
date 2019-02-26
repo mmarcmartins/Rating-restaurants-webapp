@@ -138,6 +138,7 @@ nav h1 {
 
 .menu-list.active{
   height: 114px;
+  visibility: visible;
 }
 .menu-list.active.restaurant-info{
   height: 237px;
@@ -162,8 +163,10 @@ nav h1 {
     height: 60px;
     top: 0;
     right: -56px;
-    background-color: #334a5a;    
+    background-color: #334a5a;
+    border: none;    
   }
+
 
 .menu--button:after{
     content: "";
@@ -191,6 +194,7 @@ nav h1 {
     border-left-color: #D9CEC6;
     top: 25px;
 }
+
 .menu--nav{
     text-align: center;
     display: inline-block;

@@ -16,7 +16,7 @@
         <h1 class="menutitle">
           <a href="/">Restaurant Reviews</a>          
         </h1>
-       <span class="menu--button" id="menuButton" role="button" aria-label="Switch menu"></span>
+       <button class="menu--button" id="menuButton" aria-label="Switch menu" aria-expanded="false"></button>
        <ul class="nostylelist menu-list" id="menuList">
           <li>
             <a class="anchor" href="#allrestaurants"> All restaurants </a>  
@@ -33,7 +33,7 @@
    <main id="maincontent">
       <section class="maincontent--section-restaurants" id="allrestaurants">
         <div class="title--line">
-          <h1 class="main-section--title">All restaurants</h1>
+          <h1 class="main-section--title" tabindex='0' aria-label="All restaurants">All restaurants</h1>
           </div>
         <header class="header--subcontent filter-options">
             <h2>Filter Restaurants</h2>
