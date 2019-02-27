@@ -7,7 +7,7 @@
 }
 
 *:focus{
-  background-color: red !important;
+  background-color: #70818B !important;
 }
 body,td,th,p{
 	font-size: 10pt;

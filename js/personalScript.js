@@ -8,10 +8,12 @@
     if(!listMenu.classList.contains('active')){
       listMenu.classList.add('active');
       menuButton.classList.add('active');
+      menuButton.setAttribute('aria-expanded','true');
     }
     else{
       menuButton.classList.remove('active');
       listMenu.classList.remove('active');
+      menuButton.setAttribute('aria-expanded','false');
     }
 
  };
@@ -37,10 +39,10 @@ function anchorLinkHandler(e) {
     const checkIfDone = setInterval(function() {
         const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
         if (distanceToTop(targetAnchor) === 0 || atBottom) {
-            targetAnchor.tabIndex = "-1";                        
-            targetAnchor.querySelector('.main-section--title').focus();            
+            targetAnchor.tabIndex = "-1";                                            
             window.history.pushState("", "", targetID);
             clearInterval(checkIfDone);
+            targetAnchor.querySelector('.main-section--title').focus();  
         }
     }, 100);    
 }

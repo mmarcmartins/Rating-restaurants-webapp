@@ -17,14 +17,13 @@
 
       <nav class="menu--nav">
         <h1 class="menutitle">
-          <a href="/">Restaurant Reviews</a>          
+          <a href="/" aria-label="link to home">Restaurant Reviews</a>          
         </h1>
-       <span class="menu--button" id="menuButton"></span>
+       <button class="menu--button" id="menuButton" aria-label="Switch menu" aria-expanded="false"></button>
        <ul class="nostylelist menu-list restaurant-info" id="menuList">
           <li>
             <a class="anchor" href="#summaryRestaurant"> Summary </a>  
           </li>
-
           <li>
             <a class="anchor" href="#addressRestaurant"> Address </a>  
           </li>
@@ -54,7 +53,7 @@
     <!-- End map -->
     <!-- Beginning restaurant -->
     <article>
-      <section id="summaryRestaurant">
+      <section id="summaryRestaurant" tabindex="0" aria-labelledby="restaurant-name">
 
         <div class="restaurant-container title--line">          
                 <h1 class="main-section--title" id="restaurant-name"></h1>
@@ -62,25 +61,26 @@
 
            <p class="restaurant-container--cuisine" id="restaurant-cuisine"></p>
         
-        <img id="restaurant-img">
+        <img id="restaurant-img" tabindex="0">
          </section>
 
 
-        <section class="main--center-map" id="addressRestaurant">
+        <section class="main--center-map" id="addressRestaurant" aria-labelledby="restaurant-adress-title" tabindex="0">
           <div class="restaurant-container title--line" >          
-              <h1 class="main-section--title">Address</h1>
+              <h1 class="main-section--title" id="restaurant-adress-title">Address</h1>
           </div>
+          <div tabindex="-1">
           <div class="map--mapconfig" id="map"></div>
-          <p class="'main-section--title main--center-adress" id="restaurant-address"></p>
+          </div>
+          <p class="'main-section--title main--center-adress" id="restaurant-address" tabindex="0"></p>
         </section>
 
         
         <section id="officeHours">
             <div class="restaurant-container title--line">          
-                <h2 class="main-section--title">Office Hours</h2>
+                <h2 class="main-section--title" tabindex='0' >Office Hours</h2>
             </div>
-
-          <table class="main-table--openinghours" id="restaurant-hours"></table>
+          <table class="main-table--openinghours" id="restaurant-hours" tabindex='0'></table>
         </section>
 
     
