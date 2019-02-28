@@ -11,7 +11,7 @@
 <body>
 
     <header class="header--page">
-        <a href="#maincontet" class="skip-link anchor">Skip to the main content</a>
+        <a href="#maincontent" class="skip-link">Skip to the main content</a>
       <nav class="menu--nav">
         <h1 class="menutitle">
           <a href="/" aria-label="link to home">Restaurant Reviews</a>          
@@ -30,13 +30,13 @@
       </nav>
     </header>
 
-   <main id="maincontent">
+   <main id="maincontent" aria-hidden="true">
       <section class="maincontent--section-restaurants" id="allrestaurants">
         <div class="title--line">
           <h1 class="main-section--title" tabindex='0' aria-label="All restaurants">All restaurants</h1>
           </div>
         <header class="header--subcontent filter-options">
-            <h2 tabindex='0' >Filter Restaurants</h2>
+            <h2 tabindex='0'>Filter Restaurants</h2>
             <select id="neighborhoods-select" name="neighborhoods" aria-label="List restaurants by neighborhood" onchange="updateRestaurants()">
               <option value="all">All Neighborhoods</option>
             </select>
@@ -51,7 +51,7 @@
 
       </section>
 
-    <section class="maincontent-map" id="mapsAdress" tabindex="-1">
+    <section class="maincontent-map" id="mapsAdress">
       <div class="title--line">
           <h1 class="main-section--title">Map</h1>
       </div>

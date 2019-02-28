@@ -9,6 +9,7 @@
       listMenu.classList.add('active');
       menuButton.classList.add('active');
       menuButton.setAttribute('aria-expanded','true');
+      listMenu.querySelectorAll('.anchor')[0].focus();
     }
     else{
       menuButton.classList.remove('active');
@@ -39,7 +40,7 @@ function anchorLinkHandler(e) {
     const checkIfDone = setInterval(function() {
         const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
         if (distanceToTop(targetAnchor) === 0 || atBottom) {
-            targetAnchor.tabIndex = "-1";                                            
+            //targetAnchor.tabIndex = "-1";                                            
             window.history.pushState("", "", targetID);
             clearInterval(checkIfDone);
             targetAnchor.querySelector('.main-section--title').focus();  
