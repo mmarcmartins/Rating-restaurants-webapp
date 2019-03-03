@@ -1,7 +1,7 @@
-#Objetivo do projeto
+# Objetivo do projeto
 O objetivo deste projeto é colocar em prática conhecimentos sobre acessibilidade, Service Workers e design responsivo adquiridos no curso de desenvolvedor web front end Avançado fornecido pela Udacity.
 
-#Como rodar este projeto em minha máquina ? 
+# Como rodar este projeto em minha máquina ? 
 Para a execução deste projeto você irá precisar de uma máquina com Python instalado para subir um servidor local, se não possuir Python em sua máquina, segue links para você realizar a instalação.
 Python para windows: https://www.howtogeek.com/197947/how-to-install-python-on-windows/
 Python para Linux (caso o seu não possua): https://docs.python-guide.org/starting/install3/linux/
