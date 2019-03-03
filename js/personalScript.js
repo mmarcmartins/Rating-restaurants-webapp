@@ -50,6 +50,8 @@ function anchorLinkHandler(e) {
 
 
 
-
-
-
+if(navigator.serviceWorker){
+  navigator.serviceWorker.register('/sw.js').catch( e => {
+    console.log(e);
+  })
+}

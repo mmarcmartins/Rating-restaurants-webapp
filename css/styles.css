@@ -60,11 +60,12 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 
 .restaurants-single #maincontent{
-      max-width: 1280px;
+    width: 1280px;
     display: block;
     padding: 80px 40px 80px 40px;
     margin: 0 auto;
     margin-bottom: 50px;
+    max-width: 100%;
 }
 
 .skip-link{
@@ -82,13 +83,16 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 
 #footer {
-  background-color: #444;
-  color: #aaa;
+  background-color: #334a5a;
+  color: #D9CEC6;
   font-size: 8pt;
   letter-spacing: 1px;
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
+}
+strong{
+  color: #D9CEC6;
 }
 
 .half-column{
@@ -145,7 +149,7 @@ nav h1 {
 }
 .menu-list li{
     margin-bottom: 2em ;
-    padding-top: 7px;
+    padding-top: 6px;
 }
 
 .menu-list a{
@@ -218,8 +222,10 @@ nav h1 {
 
 /* Add a color to all links inside the list */
 #breadcrumb li a {
+    display: inline-block;
     padding: .5em 1em;
     color: #f3f2f0;
+    margin: 1em 0;
     background: #0c1824;
     border: 1px solid #0c1824;
     transition: background-color .2s ease-in-out, color .2s ease-in-out;    
@@ -290,8 +296,7 @@ nav h1 {
   width: 100%;  
   color: #252831;
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding: 100px 1em 50px 1em;
   text-align: center;
   
 }
@@ -502,4 +507,49 @@ nav h1 {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+
+@media only screen and (max-width: 1050px) {
+  .maincontent--restaurants-list li{
+  flex-basis: auto;  
+  width: 250px;
+  padding-bottom: 3em;
+  margin: 1em 15px;
+  }
+  .maincontent--restaurants-list .informations,.maincontent--restaurants-list .restaurant-img{
+    float: none;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .maincontent--restaurants-list{
+    justify-content: center;
+  }
+.maincontent--restaurants-list li{
+    flex-basis: auto;  
+    width: 100%;
+    padding-bottom: 1em;
+  }
+
+}
+
+
+@media only screen and (max-width: 450px){
+  
+  .menu--button:after{
+    top: 7px;
+  }
+
+  .menu--nav{
+    font-size: 1em;
+  }
+
+  .menu--button{
+    height: 50px;
+    right: -52px;
+  }
+
+
 }
