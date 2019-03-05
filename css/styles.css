@@ -349,7 +349,7 @@ nav h1 {
     float: left;
     width: 225px;
 }
-.maincontent--restaurants-list  li h1 {
+.maincontent--restaurants-list  li h2 {
   color: #252831;  
   font-size: 1.2em;
   font-weight: 700;
@@ -447,13 +447,6 @@ nav h1 {
     font-size: 1.5em;
 }
 
-#reviews-container h2 {
-  color: #f58500;
-  font-size: 24pt;
-  font-weight: 300;
-  letter-spacing: -1px;
-  padding-bottom: 1pt;
-}
 #reviews-list {
   margin: 0;
   padding: 0;

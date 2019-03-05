@@ -1,4 +1,4 @@
-/* All Effects and Focus */
+/* All Effects and Focus and register SW */
 
  const menuButton = document.getElementById('menuButton');
  const listMenu = document.getElementById('menuList');
@@ -50,8 +50,13 @@ function anchorLinkHandler(e) {
 
 
 
-if(navigator.serviceWorker){
-  navigator.serviceWorker.register('/sw.js').catch( e => {
-    console.log(e);
-  })
-}
+
+
+
+window.addEventListener('load', function() {
+  if(navigator.serviceWorker){
+    navigator.serviceWorker.register('/sw.js').catch( e => {
+      console.log(e);
+    })
+  }    
+});
